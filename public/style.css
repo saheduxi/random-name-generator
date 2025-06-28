@@ -22,7 +22,7 @@ body {
 
 h1 {
   font-size: 28px;
-  margin-bottom: 8px; /* আগে ছিল 32px, কমিয়ে দিলাম */
+  margin-bottom: 4px; /* আগে ছিল 32px, কমিয়ে দিলাম */
   line-height: 1.2;
 }
 
@@ -30,6 +30,7 @@ h1 {
   font-size: 20px;
   font-weight: bold; 
   margin-bottom: 16px; /* নিচে বাটনের সাথে গ্যাপ রাখতে পারো */
+  margin-top: 12px;
   color: #4b5563;
 }
 
