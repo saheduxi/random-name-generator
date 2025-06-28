@@ -27,7 +27,8 @@ h1 {
 }
 
 .subtext {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold; 
   margin-bottom: 16px; /* নিচে বাটনের সাথে গ্যাপ রাখতে পারো */
   color: #4b5563;
 }
