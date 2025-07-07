@@ -17,19 +17,8 @@ body {
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center;
-position: relative;
-  padding-left: 70px; /* leave space so content doesn’t overlap the logo */  
+  text-align: center; 
 }
-
-.logo {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
-}
-
 
 
 
