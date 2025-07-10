@@ -1,3 +1,4 @@
+// শুধুমাত্র উদাহরণ: প্রথম ২০টা নাম দেখানো হলো সংক্ষেপে
 const firstNames = [
   "Aylin","Zayn","Ivory","Max","Rivka","Dustin","Elaine","Isaiah","Holly","Kye",
   "Haley","Holden","Blaire","Kaysen","Brooklyn","Lane","Mariam","Cash","Maia","Jadiel",
@@ -100,7 +101,6 @@ const firstNames = [
   "Vada","Major","Elliot","Brantley","Madisyn","Amir","Regina","Jameson","Alianna","Dilan",
   "Reyna","Ashton","Katherine","Joaquin","Chaya","Grady","Tinsley","Rhett","Nola"
 ];
-
 const lastNames = [
   "Cortez","Collier","Wells","Chung","Barron","Moody","Gomez","Hammond","Ellison","Bauer",
   "Richards","Glenn","Lamb","Turner","Lawson","Boone","Jensen","Parsons","Mays","Fernandez",
@@ -137,20 +137,23 @@ function generateName() {
 
 function generateSet(count = 15) {
   const set = new Set();
-  while(set.size < count) {
+  while (set.size < count) {
     set.add(generateName());
   }
   return Array.from(set);
+}
+
+function autoResizeTextarea(textarea) {
+  textarea.style.height = 'auto';
+  textarea.style.height = textarea.scrollHeight + 'px';
 }
 
 const generateBtn = document.getElementById('generate-btn');
 const nameSetsDiv = document.getElementById('name-sets');
 
 generateBtn.addEventListener('click', () => {
-  // Clear previous sets
   nameSetsDiv.innerHTML = '';
 
-  // Generate 6 sets
   for (let i = 0; i < 6; i++) {
     const names = generateSet(15);
 
@@ -160,6 +163,7 @@ generateBtn.addEventListener('click', () => {
     const textarea = document.createElement('textarea');
     textarea.readOnly = true;
     textarea.value = names.join('\n');
+    autoResizeTextarea(textarea); // স্ক্রল বার ছাড়াই উঁচু হবে
 
     const copyBtn = document.createElement('button');
     copyBtn.className = 'copy-btn';
