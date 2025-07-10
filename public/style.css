@@ -17,10 +17,11 @@ body {
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center; 
-   position: relative;
-  padding-left: 70px; /* leave space so content doesn’t overlap the logo */
+  text-align: center;
+  position: relative;
+  padding-left: 70px;
 }
+
 .logo {
   position: absolute;
   top: 15px;
@@ -29,22 +30,19 @@ body {
   height: 50px;
 }
 
-
-
 h1 {
   font-size: 28px;
-  margin-bottom: 4px; /* আগে ছিল 32px, কমিয়ে দিলাম */
+  margin-bottom: 4px;
   line-height: 1.2;
 }
 
 .subtext {
   font-size: 20px;
-  font-weight: bold; 
-  margin-bottom: 16px; /* নিচে বাটনের সাথে গ্যাপ রাখতে পারো */
+  font-weight: bold;
+  margin-bottom: 16px;
   margin-top: 12px;
   color: #1d2127;
 }
-
 
 #generate-btn {
   background-color: #758bfd;
@@ -85,11 +83,8 @@ h1 {
   font-size: 14px;
   color: #1f2937;
   outline: none;
-  overflow: hidden; /* prevents scroll bar */
-
-
+  overflow: hidden; /* স্ক্রল বার বন্ধ */
 }
-
 
 .copy-btn {
   align-self: flex-end;
