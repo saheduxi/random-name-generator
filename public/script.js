@@ -135,7 +135,7 @@ function generateName() {
   return `${first} ${last}`;
 }
 
-function generateSet(count = 15) {
+function generateSet(count = 12) {
   const set = new Set();
   while (set.size < count) {
     set.add(generateName());
