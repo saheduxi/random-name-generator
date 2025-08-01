@@ -155,7 +155,7 @@ generateBtn.addEventListener('click', () => {
   nameSetsDiv.innerHTML = '';
 
   for (let i = 0; i < 6; i++) {
-    const names = generateSet(15);
+    const names = generateSet(12);
 
     const box = document.createElement('div');
     box.className = 'name-set';
